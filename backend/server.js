@@ -15,6 +15,12 @@ app.get("/health", (req, res) => {
   });
 });
 
+app.get("/ci-cd", (req, res) => {
+  res.json({
+    status: "OK"
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
